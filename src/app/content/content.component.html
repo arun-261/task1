@@ -1,0 +1,55 @@
+<h2 class="text-center mt-3">user details</h2>
+<hr>
+<table class="container table text-center">
+    <thead>
+        <tr>
+            <th>userid</th>
+            <th>firstname</th>
+            <th>lastname</th>
+            <th>middilename</th>
+            <th>age</th>
+            <th>gender</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>birthday</th>
+            <th>image</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of detailes">
+            <td>{{user.id}}</td>
+            <td>{{user.firstName}}</td>
+            <td>{{user.lastName}}</td>
+            <td>{{user.maidenName}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.bloodGroup}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.phone}}</td>
+            <td>{{user.birthDate}}</td>
+            <td><img style="width: 40%;" [src]="user.image" alt=""></td>
+            <!-- <td>
+                <button (click)="adress($event)" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Adress
+                </button>
+                
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Adress</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </td> -->
+
+        </tr>
+    </tbody>
+</table>
+
